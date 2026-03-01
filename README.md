@@ -65,8 +65,8 @@ Setelah Node.js dan pnpm terinstal, ikuti langkah-langkah berikut.
 **1. Clone repository ini** (jika belum):
 
 ```bash
-git clone <url-repository>
-cd <nama-folder-proyek>
+git clone https://github.com/DavidsonRafaelK/plsql_web_material.git
+cd plsql_web_material
 ```
 
 **2. Install dependensi:**
@@ -86,6 +86,7 @@ pnpm dev
 --
 
 ## Format
+
 Disini semua format sudah disesuaikan dengan standar yang ada di `.prettierrc` yang sudah disediakan, jadi pastikan untuk mengikuti aturan tersebut agar kode tetap konsisten dan mudah dibaca.
 
 Dan pastikan sebelum commit melakukan format dengan perintah berikut:

@@ -63,13 +63,14 @@ export default async function Home() {
                       Semua halaman ada di folder <code>app/</code> — setiap
                       folder jadi route, dan file <code>page.tsx</code> di
                       dalamnya jadi halaman yang tampil. Komponen yang tidak ada
-                      tulisan <code>&quot; use client &quot;</code> di atas adalah Server
-                      Component (jalan di server), kalau ada tulisan itu berarti
-                      Client Component (jalan di browser, bisa pakai state dan
-                      event). Untuk styling kita pakai Tailwind CSS — langsung
-                      tulis class di elemen HTML-nya. Kalau mau nambahin halaman
-                      baru, tinggal buat folder baru di <code>app/</code> dan
-                      isi dengan <code>page.tsx</code>. Sesimpel itu.
+                      tulisan <code>&quot; use client &quot;</code> di atas
+                      adalah Server Component (jalan di server), kalau ada
+                      tulisan itu berarti Client Component (jalan di browser,
+                      bisa pakai state dan event). Untuk styling kita pakai
+                      Tailwind CSS — langsung tulis class di elemen HTML-nya.
+                      Kalau mau nambahin halaman baru, tinggal buat folder baru
+                      di <code>app/</code> dan isi dengan <code>page.tsx</code>.
+                      Sesimpel itu.
                     </p>
                   </div>
                   <SheetFooter>
