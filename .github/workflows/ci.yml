@@ -18,6 +18,7 @@ jobs:
         with:
           node-version: 20
           cache: pnpm
-      - run: pnpm install
-      - run: pnpm format:check
-      - run: pnpm lint
+      - run: pnpm install      # Install dependencies
+      - run: pnpm format:check # Check code formatting
+      - run: pnpm lint         # Run linting to ensure code quality
+      - run: pnpm run build    # Ensure the project builds successfully
