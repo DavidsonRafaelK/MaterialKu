@@ -6,7 +6,7 @@ export default async function Home() {
   if (!supabase) {
     throw new Error('Failed to create Supabase client');
   }
-  
+
   const { data, error } = await supabase.from('test').select('*');
 
   if (error) {
@@ -20,7 +20,9 @@ export default async function Home() {
           Welkom tu kelompok 8 - Material lol
         </h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400">
-          {data && data.length > 0 ? `Found ${data.length} items` : 'No items found'}
+          {data && data.length > 0
+            ? `Found ${data.length} items`
+            : 'No items found'}
         </p>
       </div>
     </div>

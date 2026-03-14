@@ -9,11 +9,6 @@ on:
 jobs:
   ci:
     runs-on: ubuntu-latest
-    env:
-      # Dummy values so Next.js build doesn't fail on missing env vars
-      # Real values are in .env.local (not committed)
-      NEXT_PUBLIC_SUPABASE_URL: https://placeholder.supabase.co
-      NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY: sb_publishable_placeholder
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -23,7 +18,8 @@ jobs:
         with:
           node-version: 20
           cache: pnpm
-      - run: pnpm install      # Install dependencies
-      - run: pnpm format:check # Check code formatting
-      - run: pnpm lint         # Run linting to ensure code quality
-      - run: pnpm run build    # Ensure the project builds successfully
+      - run: pnpm install # Install dependencies
+      - run: pnpm format # Auto-fix formatting
+      - run: pnpm format:check # Verify formatting is clean
+      - run: pnpm lint # Run linting to ensure code quality
+      - run: pnpm run build # Ensure the project builds successfully
